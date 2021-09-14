@@ -4,3 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+.bola{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
