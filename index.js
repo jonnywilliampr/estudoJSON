@@ -1,3 +1,24 @@
+///// ENTENDENDO COMO FUNCIONA O JSON /////
+
+// JSON.parse(); //transforma o texto JSON em um objeto.
+// JSON.stringify(); //transformar um objeto em JavaScript em texto JSON.
+
+// const parseJson = JSON.parse('{"id": 1,"nome": "Notebook Dell","modelo": "gamer","quantidade": 5}');
+// console.log(parseJson);
+
+// const object = {
+//     Produto: "Caneta",
+//     Tipo: "Esferográfica",
+//     Quantidade: 1
+// };
+
+// const objectJson = JSON.stringify(object);
+
+// console.log(objectJson);
+
+
+///// REQUISIÇÃO DE API E VERIFICAÇÃO DO ESTADO /////
+
 // var minhaPromise = function(){
 //     return new Promise(function(resolve, reject){
 
@@ -22,27 +43,22 @@
 //     });
 // }
 
-axios.get('https://api.github.com/users/jonnywilliampr')
-.then(function(response){
-    console.log(response);
-})
-.catch(function(error){
-    console.log(error);
-})
+
+///// AXIOS /////
+
+// axios.get('https://api.github.com/users/jonnywilliampr')
+// .then(function(response){
+//     console.log(response);
+// })
+// .catch(function(error){
+//     console.log(error);
+// })
 
 
-// JSON.parse(); //transforma o texto JSON em um objeto.
-// JSON.stringify(); //transformar um objeto em JavaScript em texto JSON.
+///// MODULES JS /////
+import retangulo from './retangulo.js';
+import {upperName} from './uppername.js';
 
-// const parseJson = JSON.parse('{"id": 1,"nome": "Notebook Dell","modelo": "gamer","quantidade": 5}');
-// console.log(parseJson);
-
-// const object = {
-//     Produto: "Caneta",
-//     Tipo: "Esferográfica",
-//     Quantidade: 1
-// };
-
-// const objectJson = JSON.stringify(object);
-
-// console.log(objectJson);
+console.log(retangulo.areaRetangulo(2,2));
+console.log(retangulo.perimetroRetangulo(2,2));
+console.log(upperName('teste'));
